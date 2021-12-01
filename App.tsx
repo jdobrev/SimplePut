@@ -134,7 +134,6 @@ const styles = StyleSheet.create({
   screenContainer: {
     flex: 1,
     width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height - 50,
   },
   sectionContainer: {
     marginTop: 10,

@@ -60,8 +60,8 @@ export const useAPIs = () => {
   };
 
   useEffect(() => {
-    storage.get().then(d => {
-      const screens = JSON.parse(d);
+    storage.get().then(apisData => {
+      const screens = apisData ? JSON.parse(apisData) : [];
       setApis(screens);
       console.log('got screens from storage', screens);
     });
